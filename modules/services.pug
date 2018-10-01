@@ -1,0 +1,9 @@
+.services
+    mixin servicesItems(classname, title, text)
+        .services__item(class="" +classname)
+             h2.services__title= title
+             p.services__content= text
+             button(class="btn services__btn") Button
+    +servicesItems("services__items--1", "Photos", "Vestibulum suscipit tortor magna, quis pellentesque arcu volutpat ac. Tempus leo erat, sit amet ullamcorper nisl.")
+    +servicesItems("services__items--2", "Videos", "Vestibulum suscipit tortor magna, quis pellentesque arcu volutpat ac. Tempus leo erat, sit amet ullamcorper nisl.")
+    +servicesItems("services__items--3", "Downloads", "Vestibulum suscipit tortor magna, quis pellentesque arcu volutpat ac. Tempus leo erat, sit amet ullamcorper nisl.")

@@ -1,0 +1,50 @@
+.services {
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  padding: 60px;
+}
+.services__item {
+  position: relative;
+  padding: 47px 30px 30px;
+  color: $footer-bg;
+  background: #f6f6f6;
+  text-align: center;
+  width: 120px;
+  font-family: $font-stack;
+}
+.services__item:before {
+  position: absolute;
+  background: #fff;
+  width: 18px;
+  height: 18px;
+  padding: 20px;
+  top: -30px;
+  left: 60px;
+  border-radius: 50%;
+  color: $btn-color;
+}
+.services__items--1:before {
+  content: url("../../icons/photo.png");
+}
+.services__items--2:before  {
+  content: url("../../icons/film.png");
+}
+.services__items--3:before  {
+  content: url("../../icons/download.png");
+}
+.services__title {
+  margin: 0;
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.services__content {
+  font-size: 9px;
+  line-height: 15px;
+  color: #5a5f65;
+  margin-bottom: 12px;
+}
+.services__btn {
+  padding: 5px 20px;
+}

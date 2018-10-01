@@ -1,0 +1,28 @@
+.blog
+    h2.blog__title From the blog
+    .blog__content
+        mixin blogItems(path, title, text)
+            .blog__item
+                img(class="blog_img" src="" +path)
+                .blog__item-content
+                    h3.blog__item-title= title
+                    p.blog__item-text= text
+                    button(class="btn blog__item-btn") Read More
+        +blogItems("pic.jpg", "Title of a post", "In hac habitasse " +
+        "platea dictumst. Phasellus finibus ipsum enim, non " +
+        "pretium massa mattis non. Curabitur ut tempus ex. " +
+        "Nunc dictum est enim, consectetur convallis odio " +
+        "mollis tempus.")
+
+        +blogItems("pic.jpg", "Title of a post", "In hac habitasse " +
+        "platea dictumst. Phasellus finibus ipsum enim, non " +
+        "pretium massa mattis non. Curabitur ut tempus ex. " +
+        "Nunc dictum est enim, consectetur convallis odio " +
+        "mollis tempus.")
+
+        +blogItems("pic.jpg", "Title of a post", "In hac habitasse " +
+        "platea dictumst. Phasellus finibus ipsum enim, non " +
+        "pretium massa mattis non. Curabitur ut tempus ex. " +
+        "Nunc dictum est enim, consectetur convallis odio " +
+        "mollis tempus.")
+

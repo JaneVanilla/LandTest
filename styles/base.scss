@@ -1,0 +1,37 @@
+@import "mixins";
+$btn-color: #4cb480;
+$sidebar-bg: #282d32;
+$footer-bg: #353a3f;
+$font-stack: 'Poppins', sans-serif;
+body {
+  margin: 0 auto;
+  width: 800px;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  display: flex;
+  min-height: 100vh;
+}
+.content {
+  flex-grow: 1;
+}
+.btn {
+  @include border-radius(30px);
+  padding: 7px 30px;
+  background: $btn-color;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 700;
+  font-family: $font-stack;
+  border: none;
+  cursor: pointer;
+}

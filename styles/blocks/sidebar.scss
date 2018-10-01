@@ -1,0 +1,35 @@
+.sidebar {
+  padding: 20px 18px;
+  background: $sidebar-bg;
+  color: #949699;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.sidebar-logo {
+  position: relative;
+  margin-bottom: 40px;
+}
+.sidebar-logo::after {
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  content: "";
+  margin-left: -6px;
+  width: 12px;
+  height: 2px;
+  background: $btn-color;
+  border-radius: 1.5px;
+}
+.sidebar-link {
+  color: $btn-color;
+  font-size: 16px;
+  font-family: 'Sawarabi Gothic', sans-serif;
+}
+.sidebar__search-btn {
+  background: none;
+  cursor: pointer;
+  border: none;
+  color: #939698;
+  font-size: 14px;
+}

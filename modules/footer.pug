@@ -1,0 +1,21 @@
+.footer
+    .footer__navigation
+        nav.footer__nav
+            ul.footer__nav-list
+                mixin footer-item(text)
+                    li.footer__nav-item
+                        a.footer__nav-link= text
+                +footer-item("work")
+                +footer-item("about")
+                +footer-item("services")
+                +footer-item("blog")
+        p.footer__information &copy; 2018 NAME. All rights reserved.
+    .footer__social
+        ul.footer__social-list
+            mixin social-link(address, width, height)
+                li.footer__social-item
+                    a.footer__social-link
+                        img.footer__social-img(src="" +address width="" +width height="" +height)
+            +social-link("icons/facebook.png", "8", "15")
+            +social-link("icons/twitter.png", "16", "13")
+            +social-link("icons/instagram.png", "16", "16")
